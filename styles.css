@@ -1,0 +1,469 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(154, 153, 126, 1);
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+.hat header{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(132, 132, 109);
+
+}
+  
+.hat header ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 67px;
+    width: 50%;
+    background: url(img/Group\ 4.png);
+  }
+  
+.hat header li{
+    font-size: 24px;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 8px;
+    transition: 0.6s;
+    border-bottom: 2px solid transparent;
+  }
+  
+.hat header li:hover{
+    font-size: 27px;
+    transition: 0.6s;
+  }
+  
+.hat header a{
+    text-decoration: none;
+    text-decoration: none;
+    color: black;
+  }
+  
+.hat header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+  }
+  
+.hat header .logo{
+    width: 62px;
+    height: 62px;
+    transition: 0.6s;
+  }
+  
+.hat header img.add{
+    width: 142px;
+    height: 62px;
+    transition: 0.6s;
+  }
+  
+.hat header img.logo:hover{
+    width: 72px;
+    height: 72px;
+    transition: 0.6s;
+  }
+  
+.hat header img.add:hover{
+    width: 152px;
+    height: 72px;
+    transition: 0.6s;
+  
+}
+
+
+
+
+
+
+
+
+
+.NOTE{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+
+.addNote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(238, 228, 137, 1);
+    width: 40%;
+    height: 530px;
+}
+
+
+
+#noteTitle{
+    width: 70%;
+    height: 40px;
+    background-color: rgba(246, 240, 185, 1);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.NandS{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+#noteContent{
+    display: flex;
+    width: 80%;
+    height: 380px;
+    background-color: rgba(246, 240, 185, 1);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#addNote{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  
+}
+
+
+.forNOTE{
+    font-size: 12px;
+}
+
+.allNote{
+    margin-top: 150px;
+    width: 100%;
+}
+
+.allNote .block1{
+    display: flex;
+    height: 90px;
+    width: 100%;
+    background-color: rgba(217, 217, 217, 1);
+    justify-content: center;
+    align-items: center;
+}
+
+.delNote{
+    margin-top: 150px;
+}
+
+.delNote .block2{
+    display: flex;
+    height: 90px;
+    width: 100%;
+    background-color: rgba(217, 217, 217, 1);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.saven{
+    height: 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.note {
+    background: rgba(238, 228, 137, 1);
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+}
+
+
+.imgdel{
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 0.6s;
+}
+
+.imgdel:hover{
+    transition: 0.6s;
+    background-color: rgb(147, 43, 43);
+}
+
+
+
+.imgrem{
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 0.6s;
+}
+
+.imgrem:hover{
+    transition: 0.6s;
+    background-color: rgb(46, 147, 43);
+}
+
+
+
+
+
+
+.note textarea{
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    background-color: rgba(246, 240, 185, 1);
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+.note button{
+    background: transparent;
+    border: none;
+}
+
+
+
+
+
+
+.foot{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+  
+.foot ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    align-items: center;
+    height: 67px;
+    background: url(img/Group\ 4.png);
+  }
+  
+.foot li{
+    font-size: 24px;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 8px;
+    transition: 0.6s;
+    border-bottom: 2px solid transparent;
+  }
+  
+.foot li:hover{
+    font-size: 27px;
+    transition: 0.6s;
+  }
+  
+.foot a{
+    text-decoration: none;
+    text-decoration: none;
+    color: black;
+  }
+  
+.foot nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+.foot .logo{
+    width: 62px;
+    height: 62px;
+    transition: 0.6s;
+  }
+  
+.foot img.add{
+    width: 142px;
+    height: 62px;
+    transition: 0.6s;
+  }
+  
+.foot img.logo:hover{
+    width: 72px;
+    height: 72px;
+    transition: 0.6s;
+  }
+  
+.foot img.add:hover{
+    width: 152px;
+    height: 72px;
+    transition: 0.6s;
+  
+}
+
+
+
+footer{
+    width: 100%;
+    height: 50%;
+    background-color: rgba(119, 118, 101, 1);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 150px;
+  }
+
+#notesList{
+    flex-wrap: wrap;
+}
+
+
+
+@media screen and (max-width: 426px){
+    .add{
+       display: none;
+    }
+
+
+    .addNote{
+        width: 75%;
+    }
+
+
+    .hat header li{
+        font-size: 15px;
+    }
+
+    .logo {
+        width: 15px;
+        height: 15px;
+    }
+
+    .hat header ul{
+        width: 70%;
+        height: 40px;
+    }
+    .hat header nav{
+        flex-direction: column;
+    }
+
+    .foot nav{
+        flex-direction: column;
+    }
+
+    .foot li{
+        font-size: 15px;
+    }
+
+    .foot a{
+        margin: 0;
+    }
+
+    .foot ul{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+    }
+
+    .NandS{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 376px){
+    .NandS{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    #noteTitle{
+        width: 155px;
+        height: 30px;
+
+    }
+
+    .hat header li{
+        font-size: 15px;
+    }
+
+
+    .hat header nav{
+        margin-bottom: 10px;
+    }
+
+    .hat header ul{
+        height: 50px;
+        width: 90%;
+    }
+
+    .hat header{
+        height: 170px;
+    }
+
+    .foot nav{
+        flex-direction: column;
+    }
+
+    .foot li{
+        font-size: 15px;
+    }
+
+    .foot ul{
+        height: 50px;
+    }
+
+}
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нотатки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="hat">
+        <header id="myHeader">
+            <nav>
+              <img src="img/notes.png" alt="" class="logo">
+              <ul>
+                <li><a href="#allNote">all notes</a></li>
+                <li><a href="#delNote">my history</a></li>
+                <li><a href="help.html">help</a></li>
+              </ul>
+              <img src="img/new.png" alt="" class="add">
+
+
+            </nav>
+        </header>  
+  
+    </div>
+
+    <section class="NOTE">
+        <div class="addNote">
+            <div class="NandS">
+                <input maxlength="10" type="text" id="noteTitle" placeholder="name">
+                <button id="addNote"><img src="img/bi_save.png" alt="" class="saven"></button>
+            </div>
+           
+            <textarea maxlength="150"  id="noteContent" placeholder="write your note"></textarea>
+
+
+
+            <p class="forNOTE">max 150 elements</p>
+        </div>    
+    </section>
+
+
+    <section class="allNote" id="allNote">
+        <div class="block1" >
+            <h2>all notes</h2>
+        </div>
+        <ul id="notesList"></ul>
+    </section>
+    
+
+    <section class="delNote" id="delNote">
+        <div class="block2">
+            <h2>deleted notes</h2>
+        </div>
+        <ul id="archivedNotes"></ul>
+    </section>
+   
+
+
+
+    <footer>
+        <div class="foot">
+            
+            <nav>
+                <a href=""><img src="img/notes.png" alt="" class="logo"></a>
+                <ul>
+                <li><a href="#allNote">all notes</a></li>
+                <li><a href="#delNote">my history</a></li>
+                <li><a href="help.html">help</a></li>
+                </ul>
+                <a href=""><img src="img/new.png" alt="" class="add"></a>
+            </nav>
+             
+        </div>
+       
+    </footer>
+  
+  
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
